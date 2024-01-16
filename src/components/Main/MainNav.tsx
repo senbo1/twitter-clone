@@ -10,22 +10,22 @@ const MainNav: FC<MainNavProps> = () => {
       <Button
         variant="switch"
         size="lg"
-        className="grow text-base font-semibold"
+        className="grow"
       >
         <div className='relative flex flex-col justify-center h-full'>
-          <p className="my-auto">For you</p>
-          <span className="absolute bg-twitter-blue-500 h-1.5 w-[56px] rounded-full bottom-0"></span>
+          <p className="text-md font-semibold">For you</p>
+          <span className="absolute bg-twitter-blue-500 h-[5px] w-[56px] rounded-full bottom-0"></span>
         </div>
       </Button>
       <Button
         variant="switch"
         size="lg"
-        className="grow text-primary-gray text-base"
+        className="grow text-primary-gray text-md"
       >
         Following
       </Button>
 
-      <MdOutlineSettings className="h-10 w-10 hover:bg-white/10 p-2 mx-4 transition-all rounded-full" />
+      <MdOutlineSettings className="h-9 w-9 hover:bg-white/10 p-2 mx-4 transition-all rounded-full cursor-pointer" />
     </section>
   );
 };

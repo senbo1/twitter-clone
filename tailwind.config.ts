@@ -34,6 +34,9 @@ const config: Config = {
           '950': '#082949',
         },
       },
+      fontSize: {
+        md: '15px'
+      }
     },
   },
   plugins: [],
