@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          'flex justify-center min-h-screen w-full gap-0 lg:gap-4',
+          'flex justify-center min-h-screen w-full gap-0 lg:gap-4 dark',
           inter.className
         )}
       >

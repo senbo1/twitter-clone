@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react';
 import { BsThreeDots, BsTwitterX } from 'react-icons/bs';
-import Button from '../UI/Button';
+import { Button } from '../UI/Button';
 import Image from 'next/image';
 import Nav from './Nav';
 
@@ -28,7 +28,7 @@ const Sidebar: FC<SidebarProps> = () => {
 
           {/* Post Button */}
           {/* Todo - show logo for smaller screen size */}
-          <Button className="hidden xl:block mt-2 w-[92%]">Post</Button>
+          <Button className='hidden xl:block mt-2 w-[92%] font-semibold text-base' size='lg'>Post</Button>
         </section>
 
         {/* User Profile */}
@@ -42,7 +42,7 @@ const Sidebar: FC<SidebarProps> = () => {
           />
           <div className="flex flex-col justify-center">
             <p className="font-bold text-sm truncate">harsh</p>
-            <p className="text-gray-500 text-sm truncate">@senbozzz</p>
+            <p className="text-gray-500 text-sm truncate">@senbodev</p>
           </div>
           <BsThreeDots className="w-5 h-5 ml-auto" />
         </div>
