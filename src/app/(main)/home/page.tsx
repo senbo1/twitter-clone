@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import MainNav from '@/components/Main/MainNav';
+import TweetBox from '@/components/Main/TweetBox';
 
 interface pageProps {}
 
@@ -9,6 +10,7 @@ const page: FC<pageProps> = () => {
       {/* For You/ Following */}
       <MainNav />
       {/* Post Area */}
+      <TweetBox />
       <div className=" h-[1000px]">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio animi
         quam quae explicabo incidunt velit ipsa, voluptates illum nam est

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { FC } from 'react';
-import { BsThreeDots, BsTwitterX } from 'react-icons/bs';
+import { BsTwitterX } from 'react-icons/bs';
 import { Button } from '../UI/Button';
-import Image from 'next/image';
-import Nav from './Nav';
+import NavLinks from './NavLinks';
+import UserProfile from './UserProfile';
 
 interface SidebarProps {}
 
@@ -23,8 +23,7 @@ const Sidebar: FC<SidebarProps> = () => {
             </Link>
           </h1>
 
-          {/* NavLinks */}
-          <Nav />
+          <NavLinks />
 
           {/* Post Button */}
           {/* Todo - show logo for smaller screen size */}
@@ -32,20 +31,7 @@ const Sidebar: FC<SidebarProps> = () => {
         </section>
 
         {/* User Profile */}
-        <div className="hidden xl:flex items-center gap-4 mb-1 p-3 rounded-full hover:bg-primary-light/10 transition-all duration-200">
-          <Image
-            src="/profilepic.jpg"
-            alt="profile"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
-          <div className="flex flex-col justify-center">
-            <p className="font-bold text-sm truncate">harsh</p>
-            <p className="text-gray-500 text-sm truncate">@senbodev</p>
-          </div>
-          <BsThreeDots className="w-5 h-5 ml-auto" />
-        </div>
+        <UserProfile /> 
       </div>
     </header>
   );

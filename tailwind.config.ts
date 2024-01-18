@@ -17,6 +17,7 @@ const config: Config = {
         xs: '500px',
       },
       colors: {
+        'background': 'hsl(var(--background))',
         'gray-border': '#2f3336',
         'primary-light': '#eff3f4',
         'primary-gray': '#71767B',
